@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from 'next-themes';
 import { useState, createContext, useEffect } from 'react';
-import { AuthProvider } from '@/components/AuthProvider';
+import { AuthProvider } from '@/contexts/auth-context';
 import { ReactQueryProvider } from '@/providers/react-query-provider';
 import { dehydrate, QueryClient } from '@tanstack/react-query';
 

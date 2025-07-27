@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 
 // Global cache to persist between component mounts
 const fileCache = new Map<string, {

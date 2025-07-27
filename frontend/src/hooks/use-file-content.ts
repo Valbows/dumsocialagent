@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import { FileCache, getCachedFile } from './use-cached-file';
 
 // Query keys for file content

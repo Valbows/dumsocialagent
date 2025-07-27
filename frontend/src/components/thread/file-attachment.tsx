@@ -10,7 +10,7 @@ import { HtmlRenderer } from './preview-renderers/html-renderer';
 import { MarkdownRenderer } from './preview-renderers/markdown-renderer';
 import { CsvRenderer } from './preview-renderers/csv-renderer';
 import { useFileContent, useImageContent } from '@/hooks/react-query/files';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import { Project } from '@/lib/api';
 
 // Define basic file types

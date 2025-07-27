@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@/components/home/theme-provider';
 import { siteConfig } from '@/lib/site';
 import type { Metadata, Viewport } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
 import { Toaster } from '@/components/ui/sonner';
@@ -20,6 +20,11 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const playfairDisplay = Playfair_Display({
+  variable: '--font-playfair-display',
+  subsets: ['latin'],
+});
+
 export const viewport: Viewport = {
   themeColor: 'black',
 };
@@ -31,25 +36,24 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description:
-    'Suna is a fully open source AI assistant that helps you accomplish real-world tasks with ease. Through natural conversation, Suna becomes your digital companion for research, data analysis, and everyday challenges.',
+    'Dum Social is an AI-powered social media management agent that helps you create, schedule, and optimize your social media content effortlessly. Generate engaging posts, images, and videos with intelligent automation.',
   keywords: [
     'AI',
     'artificial intelligence',
-    'browser automation',
-    'web scraping',
-    'file management',
+    'social media management',
+    'content creation',
+    'social media automation',
     'AI assistant',
-    'open source',
-    'research',
-    'data analysis',
+    'content generation',
+    'social media scheduling',
+    'digital marketing',
+    'social media agent',
   ],
-  authors: [{ name: 'Kortix Team', url: 'https://suna.so' }],
-  creator:
-    'Kortix Team - Adam Cohen Hillel, Marko Kraemer, Domenico Gagliardi, and Quoc Dat Le',
-  publisher:
-    'Kortix Team - Adam Cohen Hillel, Marko Kraemer, Domenico Gagliardi, and Quoc Dat Le',
+  authors: [{ name: 'Dum Social Team', url: 'https://dumsocial.ai' }],
+  creator: 'Dum Social Team',
+  publisher: 'Dum Social Team',
   category: 'Technology',
-  applicationName: 'Suna',
+  applicationName: 'Dum Social',
   formatDetection: {
     telephone: false,
     email: false,
@@ -64,17 +68,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Suna - Open Source Generalist AI Agent',
+    title: 'Dum Social - AI-Powered Social Media Management',
     description:
-      'Suna is a fully open source AI assistant that helps you accomplish real-world tasks with ease through natural conversation.',
+      'Dum Social is an AI-powered social media management agent that helps you create, schedule, and optimize your social media content effortlessly.',
     url: siteConfig.url,
-    siteName: 'Suna',
+    siteName: 'Dum Social',
     images: [
       {
         url: '/banner.png',
         width: 1200,
         height: 630,
-        alt: 'Suna - Open Source Generalist AI Agent',
+        alt: 'Dum Social - AI-Powered Social Media Management',
         type: 'image/png',
       },
     ],
@@ -83,17 +87,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Suna - Open Source Generalist AI Agent',
+    title: 'Dum Social - AI-Powered Social Media Management',
     description:
-      'Suna is a fully open source AI assistant that helps you accomplish real-world tasks with ease through natural conversation.',
-    creator: '@kortixai',
-    site: '@kortixai',
+      'Dum Social is an AI-powered social media management agent that helps you create, schedule, and optimize your social media content effortlessly.',
+    creator: '@dumsocial',
+    site: '@dumsocial',
     images: [
       {
         url: '/banner.png',
         width: 1200,
         height: 630,
-        alt: 'Suna - Open Source Generalist AI Agent',
+        alt: 'Dum Social - AI-Powered Social Media Management',
       },
     ],
   },
@@ -127,7 +131,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans bg-background`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased font-sans bg-background`}
       >
         <noscript>
           <iframe

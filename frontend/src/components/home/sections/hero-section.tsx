@@ -8,7 +8,7 @@ import { useState, useEffect, useRef, FormEvent } from 'react';
 import { useScroll } from 'motion/react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import {
   BillingError,
 } from '@/lib/api';

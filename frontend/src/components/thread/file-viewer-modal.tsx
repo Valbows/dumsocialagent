@@ -33,7 +33,7 @@ import {
 } from '@/lib/api';
 import { toast } from 'sonner';
 import { createClient } from '@/lib/supabase/client';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import {
   DropdownMenu,
   DropdownMenuTrigger,

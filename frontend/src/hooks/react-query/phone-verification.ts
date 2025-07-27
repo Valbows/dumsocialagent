@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { phoneVerificationService } from '@/lib/api/phone-verification';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 
 export const useEnrollPhoneNumber = () => {
   const queryClient = useQueryClient();

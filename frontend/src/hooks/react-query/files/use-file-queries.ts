@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import { listSandboxFiles, type FileInfo } from '@/lib/api';
 
 // Re-export FileCache utilities for compatibility

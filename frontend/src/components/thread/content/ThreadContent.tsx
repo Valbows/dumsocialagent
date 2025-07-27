@@ -5,7 +5,7 @@ import { Markdown } from '@/components/ui/markdown';
 import { UnifiedMessage, ParsedContent, ParsedMetadata } from '@/components/thread/types';
 import { FileAttachmentGrid } from '@/components/thread/file-attachment';
 import { useFilePreloader, FileCache } from '@/hooks/react-query/files';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import { Project } from '@/lib/api';
 import {
     extractPrimaryParam,

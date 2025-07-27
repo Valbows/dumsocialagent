@@ -11,7 +11,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 
 const INITIAL_WIDTH = '70rem';
 const MAX_WIDTH = '800px';

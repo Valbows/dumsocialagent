@@ -14,7 +14,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { cn, truncateString } from '@/lib/utils';
 import { GenericToolView } from '../GenericToolView';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
 

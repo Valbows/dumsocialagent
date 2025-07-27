@@ -16,7 +16,7 @@ import {
   MailCheck,
   Loader2,
 } from 'lucide-react';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import { useAuthMethodTracking } from '@/lib/stores/auth-tracking';
 import { toast } from 'sonner';
 import { useFeatureFlag } from '@/lib/feature-flags';

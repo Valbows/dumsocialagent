@@ -15,7 +15,7 @@ import {
     createPortalSession,
     SubscriptionStatus,
 } from '@/lib/api';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import { Skeleton } from '@/components/ui/skeleton';
 import { X } from 'lucide-react';
 

@@ -142,6 +142,7 @@ allow_origin_regex = None
 # Add staging-specific origins
 if config.ENV_MODE == EnvMode.LOCAL:
     allowed_origins.append("http://localhost:3000")
+    allowed_origins.append("http://localhost:3001")
 
 # Add staging-specific origins
 if config.ENV_MODE == EnvMode.STAGING:
@@ -188,7 +189,9 @@ from pipedream import api as pipedream_api
 api_router.include_router(pipedream_api.router)
 
 from auth import phone_verification_supabase_mfa
+from auth import pin_auth_api
 api_router.include_router(phone_verification_supabase_mfa.router)
+api_router.include_router(pin_auth_api.router)
 
 @api_router.get("/health")
 async def health_check():

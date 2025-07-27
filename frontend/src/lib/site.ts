@@ -1,11 +1,11 @@
 export const siteConfig = {
-  name: 'Kortix Suna',
-  url: 'https://suna.so/',
-  description: 'Kortix AI',
+  name: 'Dum Social',
+  url: 'https://dumsocial.ai/',
+  description: 'AI-Powered Social Media Management Agent',
   links: {
-    twitter: 'https://x.com/kortixai',
-    github: 'https://github.com/kortix-ai/',
-    linkedin: 'https://www.linkedin.com/company/kortix/',
+    twitter: 'https://x.com/dumsocial',
+    github: 'https://github.com/Valbows/dumsocialagent',
+    linkedin: 'https://www.linkedin.com/company/dumsocial/',
   },
 };
 

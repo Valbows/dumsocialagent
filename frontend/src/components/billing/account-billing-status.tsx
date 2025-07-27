@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { PricingSection } from '@/components/home/sections/pricing-section';
 import { isLocalMode } from '@/lib/config';
 import { createPortalSession } from '@/lib/api';
-import { useAuth } from '@/components/AuthProvider';
+import { useAuth } from '@/contexts/auth-context';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useSubscription } from '@/hooks/react-query';
 import Link from 'next/link';

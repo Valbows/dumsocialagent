@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="serif" font-size="72" font-weight="bold" fill="#301781">
+    DUM
+  </text>
+  <text x="50%" y="75%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="serif" font-size="24" font-weight="normal" fill="#301781">
+    SOCIAL
+  </text>
+</svg>
